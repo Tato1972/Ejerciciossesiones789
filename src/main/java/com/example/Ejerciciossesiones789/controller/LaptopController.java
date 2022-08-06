@@ -32,6 +32,7 @@ public class LaptopController {
     //findAll()
     //Desde LaptopController crear un método que devuelva una lista de objetos Laptop.
     @GetMapping("/ordenadores")
+    //@GetMapping("/")
     public List<Laptop> findAll() {
         return laptopRepository.findAll();
     }
