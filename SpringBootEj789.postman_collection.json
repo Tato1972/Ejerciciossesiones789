@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "cc7d3b97-670f-4c07-bcae-bd298caa6d70",
+		"name": "SpringBootEj789",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17356995"
+	},
+	"item": [
+		{
+			"name": "New Request /ordenadores BUSCAR TODOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ordenadores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ordenadores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request /ordenadores/1 BUSCAR UNO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ordenadores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ordenadores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request /ordenadores  CREAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"marca\": \"Apple desde postman\",\r\n\"modelo\": \"Comodore\",\r\n\"price\": 2000,\r\n\"memoriaRAMenGB\": 1,\r\n\"procesador\": \"core i100\"\r\n},",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ordenadores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ordenadores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request /ordenadores  ACTUALIZAR",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 1,\r\n\"marca\": \"Apple actualizado desde postman\",\r\n\"modelo\": \"MacBook Air\",\r\n\"price\": 2000,\r\n\"memoriaRAMenGB\": 8,\r\n\"procesador\": \"core i7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ordenadores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ordenadores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request /ordenadores BORRAR UNO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ordenadores/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ordenadores",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request /ordenadores BORRAR TODOS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ordenadores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ordenadores"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
